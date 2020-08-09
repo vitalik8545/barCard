@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {View, FlatList, StyleSheet, ActivityIndicator} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Card} from '../components/Card';
-import {DATA} from '../DATA';
 import {useDispatch, useSelector} from 'react-redux';
 import {
   loadFilters,

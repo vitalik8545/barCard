@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {View, Text, FlatList, StyleSheet, TouchableOpacity} from 'react-native';
-import {FILTERS} from '../FILTERS';
 import {AppCheckBox} from '../components/AppCheckBox';
 import {useDispatch, useSelector} from 'react-redux';
 import {createUploadFilters} from '../store/actions/post';
