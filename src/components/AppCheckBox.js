@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {View, StyleSheet, Image} from 'react-native';
 import CheckBox from 'react-native-check-box';
 import {useDispatch} from 'react-redux';
-import {changeStatusFilter} from '../store/reducers/post';
+import {changeStatusFilter} from '../store/actions/post';
 
 export const AppCheckBox = ({id, title, selected}) => {
   const [state, setState] = useState(selected);
