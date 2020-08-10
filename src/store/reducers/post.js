@@ -37,9 +37,8 @@ export const PostReducer = (state = initialState, action) => {
     case CREATE_UPLOAD_FILTERS:
       return {
         ...state,
-        uploadFilters: state.filters,
+        uploadFilters: state.filters.filter((filter) => filter.selected),
         cards: [],
-        filters: state.filters,
       };
     case UPLOAD_CARDS:
       return {
